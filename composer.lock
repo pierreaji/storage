@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "af9948df80eaedaf101346ced007c865",
+    "content-hash": "fb2a783579edde4c86d46145e7385075",
     "packages": [
         {
             "name": "brick/math",
@@ -563,36 +563,35 @@
         },
         {
             "name": "google/apiclient",
-            "version": "v2.12.1",
+            "version": "v2.12.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client.git",
-                "reference": "1530583a711f4414407112c4068464bcbace1c71"
+                "reference": "f92aa126903a9e2da5bd41a280d9633cb249e79e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client/zipball/1530583a711f4414407112c4068464bcbace1c71",
-                "reference": "1530583a711f4414407112c4068464bcbace1c71",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client/zipball/f92aa126903a9e2da5bd41a280d9633cb249e79e",
+                "reference": "f92aa126903a9e2da5bd41a280d9633cb249e79e",
                 "shasum": ""
             },
             "require": {
-                "firebase/php-jwt": "~2.0||~3.0||~4.0||~5.0",
+                "firebase/php-jwt": "~2.0||~3.0||~4.0||~5.0||~6.0",
                 "google/apiclient-services": "~0.200",
                 "google/auth": "^1.10",
                 "guzzlehttp/guzzle": "~5.3.3||~6.0||~7.0",
-                "guzzlehttp/psr7": "^1.7||^2.0.0",
-                "monolog/monolog": "^1.17||^2.0",
+                "guzzlehttp/psr7": "^1.8.4||^2.2.1",
+                "monolog/monolog": "^1.17||^2.0||^3.0",
                 "php": "^5.6|^7.0|^8.0",
                 "phpseclib/phpseclib": "~2.0||^3.0.2"
             },
             "require-dev": {
                 "cache/filesystem-adapter": "^0.3.2|^1.1",
                 "composer/composer": "^1.10.22",
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
                 "phpcompatibility/php-compatibility": "^9.2",
                 "phpspec/prophecy-phpunit": "^1.1||^2.0",
                 "phpunit/phpunit": "^5.7.21 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
-                "squizlabs/php_codesniffer": "~2.3",
+                "squizlabs/php_codesniffer": "^3.0",
                 "symfony/css-selector": "~2.1",
                 "symfony/dom-crawler": "~2.1",
                 "yoast/phpunit-polyfills": "^1.0"
@@ -628,9 +627,9 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client/issues",
-                "source": "https://github.com/googleapis/google-api-php-client/tree/v2.12.1"
+                "source": "https://github.com/googleapis/google-api-php-client/tree/v2.12.6"
             },
-            "time": "2021-12-02T03:34:25+00:00"
+            "time": "2022-06-06T20:00:19+00:00"
         },
         {
             "name": "google/apiclient-services",
@@ -1840,6 +1839,66 @@
                 }
             ],
             "time": "2022-04-17T13:12:02+00:00"
+        },
+        {
+            "name": "masbug/flysystem-google-drive-ext",
+            "version": "v2.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/masbug/flysystem-google-drive-ext.git",
+                "reference": "3947d39be212bff9cea95b2a5252e52c9eb36cc0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/masbug/flysystem-google-drive-ext/zipball/3947d39be212bff9cea95b2a5252e52c9eb36cc0",
+                "reference": "3947d39be212bff9cea95b2a5252e52c9eb36cc0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "google/apiclient": "^2.2",
+                "guzzlehttp/guzzle": "^6.3 | ^7.0",
+                "guzzlehttp/psr7": "^1.7|^2.0",
+                "league/flysystem": "^2.1.1|^3.0",
+                "php": "^7.2 | ^8.0"
+            },
+            "require-dev": {
+                "league/flysystem-adapter-test-utilities": "^2.0|^3.0",
+                "phpunit/phpunit": "^8.0 | ^9.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Masbug\\Flysystem\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Naoki Sawada",
+                    "email": "hypweb@gmail.com"
+                },
+                {
+                    "name": "Mitja Spes",
+                    "email": "mitja@lxnav.com"
+                }
+            ],
+            "description": "Flysystem adapter for Google Drive with seamless virtual<=>display path translation",
+            "keywords": [
+                "Flysystem",
+                "extended",
+                "google-drive",
+                "laravel",
+                "translated"
+            ],
+            "support": {
+                "issues": "https://github.com/masbug/flysystem-google-drive-ext/issues",
+                "source": "https://github.com/masbug/flysystem-google-drive-ext/tree/v2.2.2"
+            },
+            "time": "2022-06-24T06:43:42+00:00"
         },
         {
             "name": "monolog/monolog",

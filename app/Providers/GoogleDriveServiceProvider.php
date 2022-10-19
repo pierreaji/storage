@@ -23,7 +23,12 @@ class GoogleDriveServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        \Storage::extend("google", function($app, $config) {
         $client = new \Google_Client;
-        dd($client);
+        $client -> setClientId($config['clientId']);
+        $client -> setClientSecret($config['clientSecret']);
+        $client -> refreshToken($config['refreshToken']);
+        // dd($client);
+        });
     }
 }
